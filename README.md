@@ -31,7 +31,7 @@ of DEEP's development repository), limited to what the build needs:
 
 `deep-amm` and `deep-curve` compile a few public keys in from the environment, so no instruction
 can change them later. `.cargo/config.toml` sets them through Cargo's `[env]` table for every
-build of this tree:
+build of this tree (the full list is in that file):
 
 | Variable | Mainnet value | Role |
 | --- | --- | --- |
@@ -39,7 +39,6 @@ build of this tree:
 | `DEEP_AMM_FEE_OWNER` | `4vEQmhpGxVJNiLaYz16NVaYQqcp7GbZMwd5TR3cZtQqu` | the same vault |
 | `DEEP_FEE_VAULT` | `8a2XakVBzdMRJ6gMY6u8mvebzJGgbmG6nVBVPB8uwBVZ` | deep-curve PDA `["fee_vault"]`: receives all DEEP revenue |
 | `DEEP_AMM_CREATE_POOL_FEE_RECEIVER` | `EcnANJ5kYr7a8LpiH4ETkSGD3r7SDdicUn9ttf5MWCir` | the fee vault's WSOL account |
-| `DEEP_BUILDER_WALLET` | `7S9b5c2vEYhiVzqijW2SehGzJ5DAio1X2KdN2fEXgykX` | receives exactly 10% of DEEP revenue through `distribute` |
 
 Without that file every key resolves to the system program (no admin). The mainnet build is
 compiled **without** the `devnet` Cargo feature (that feature only relaxes the Pyth price age
@@ -93,7 +92,7 @@ cargo test --workspace            # unit tests and the cross-language vectors
 
 The LiteSVM integration tests (`--features litesvm-tests`) load SBF binaries and test keypairs
 from paths given in environment variables (`DEEP_CURVE_SO`, `DEEP_AMM_SO`, `DEEP_REWARDS_SO`,
-`MPL_TOKEN_METADATA_SO`, `BUILDER_KEYPAIR`, …); DEEP's own harness runs them.
+`MPL_TOKEN_METADATA_SO`, …); DEEP's own harness runs them.
 
 ## Security
 
