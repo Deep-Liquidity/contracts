@@ -17,7 +17,7 @@ Modifications by the DEEP project (Apache-2.0 section 4(b)):
      (HCrCy6bzHhZ1b6bXwQAucEFkKXyzYMh3hgAR8UPrYSEP) for every cluster;
    - the `#[program]` module renamed `raydium_cp_swap` -> `deep_amm` (instruction and
      account discriminators are unchanged);
-   - `security_txt!` points at the DEEP project and states the fork is not audited;
+   - `security_txt!` points at the DEEP project and its security contact;
    - the Raydium-controlled keys (`admin`, `create_pool_fee_reveiver`,
      `collect_lamports`, `fund_fee_owner`, `protocol_fee_owner`,
      `shared_creator_fee_owner`) now resolve to build-time values in the new

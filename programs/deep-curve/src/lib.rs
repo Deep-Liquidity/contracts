@@ -1,8 +1,7 @@
 //! Deep Curve — DEEP's bonding-curve launch program.
 //!
-//! NOT AUDITED: no independent audit has been done. The same source is the devnet build
-//! (Cargo feature `devnet`, 600 s Pyth price age) and the mainnet release candidate (default
-//! features). See docs/PROGRAMS.md, docs/SECURITY.md and docs/KNOWN_ISSUES.md.
+//! The same source is the devnet build (Cargo feature `devnet`, 600 s Pyth price age) and the
+//! mainnet release candidate (default features). See docs/PROGRAMS.md, docs/SECURITY.md and docs/KNOWN_ISSUES.md.
 
 use anchor_lang::prelude::*;
 use anchor_lang::solana_program::instruction::Instruction;
@@ -30,8 +29,7 @@ solana_security_txt::security_txt! {
     contacts: "email:security@deepliquidity.fun,link:https://github.com/Deep-Liquidity/contracts/security/advisories/new",
     policy: "https://github.com/Deep-Liquidity/contracts/blob/main/SECURITY.md",
     source_code: "https://github.com/Deep-Liquidity/contracts",
-    preferred_languages: "en",
-    auditors: "None"
+    preferred_languages: "en"
 }
 
 declare_id!("7czURwVLkQpcF1HVhhZU5GGzvPA8YniogZY1BhZHCDtA");
