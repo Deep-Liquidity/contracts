@@ -32,6 +32,7 @@ unexpected_cfgs = { level = "warn", check-cfg = ['cfg(target_os, values("solana"
 [dependencies]
 anchor-lang = { version = "=1.2.0", features = ["init-if-needed"] }
 anchor-spl = { version = "=1.2.0", features = ["token", "token_2022", "associated_token", "metadata"] }
+solana-security-txt = "1.1.1"
 # Graduation CPI target; used for its program id + create-pool fee receiver constants.
 deep-amm = { path = "../deep-amm", features = ["no-entrypoint"] }
 
