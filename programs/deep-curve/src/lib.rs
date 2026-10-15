@@ -23,6 +23,17 @@ pub use splitter::*;
 
 use math::{Curve, Fees, FeesV1, MathError};
 
+#[cfg(not(feature = "no-entrypoint"))]
+solana_security_txt::security_txt! {
+    name: "deep-curve",
+    project_url: "https://deepliquidity.fun",
+    contacts: "email:security@deepliquidity.fun,link:https://github.com/Deep-Liquidity/contracts/security/advisories/new",
+    policy: "https://github.com/Deep-Liquidity/contracts/blob/main/SECURITY.md",
+    source_code: "https://github.com/Deep-Liquidity/contracts",
+    preferred_languages: "en",
+    auditors: "None"
+}
+
 declare_id!("7czURwVLkQpcF1HVhhZU5GGzvPA8YniogZY1BhZHCDtA");
 
 pub const CONFIG_SEED: &[u8] = b"config";

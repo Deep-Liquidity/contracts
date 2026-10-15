@@ -46,6 +46,17 @@ use anchor_spl::token_interface::{self, Mint, TokenAccount, TokenInterface};
 pub mod merkle;
 pub mod pyth;
 
+#[cfg(not(feature = "no-entrypoint"))]
+solana_security_txt::security_txt! {
+    name: "deep-rewards",
+    project_url: "https://deepliquidity.fun",
+    contacts: "email:security@deepliquidity.fun,link:https://github.com/Deep-Liquidity/contracts/security/advisories/new",
+    policy: "https://github.com/Deep-Liquidity/contracts/blob/main/SECURITY.md",
+    source_code: "https://github.com/Deep-Liquidity/contracts",
+    preferred_languages: "en",
+    auditors: "None"
+}
+
 declare_id!("4z2KpxUcdNFXFpzxKtcmTv6aDMqE4CMLCdbYExLYeDE2");
 
 pub const REWARDS_CONFIG_SEED: &[u8] = b"rewards_config";

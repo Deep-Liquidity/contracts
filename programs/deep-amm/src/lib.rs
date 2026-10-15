@@ -11,10 +11,10 @@ pub use states::CreatorFeeOn;
 #[cfg(not(feature = "no-entrypoint"))]
 solana_security_txt::security_txt! {
     name: "deep-amm",
-    project_url: "https://github.com/OxForged/deepswap",
-    contacts: "link:https://github.com/OxForged/deepswap/security",
-    policy: "https://github.com/OxForged/deepswap/blob/main/docs/SECURITY.md",
-    source_code: "https://github.com/OxForged/deepswap",
+    project_url: "https://deepliquidity.fun",
+    contacts: "email:security@deepliquidity.fun,link:https://github.com/Deep-Liquidity/contracts/security/advisories/new",
+    policy: "https://github.com/Deep-Liquidity/contracts/blob/main/SECURITY.md",
+    source_code: "https://github.com/Deep-Liquidity/contracts",
     preferred_languages: "en",
     auditors: "None. Fork of raydium-cp-swap (see NOTICE); the fork itself is not audited."
 }
