@@ -13,9 +13,6 @@ The same IDs are used on devnet. The IDLs are in [`idl/`](idl/). The TypeScript 
 [`@deepliquidity/sdk`](https://www.npmjs.com/package/@deepliquidity/sdk)
 ([source](https://github.com/Deep-Liquidity/deep-sdk)).
 
-> **Not audited.** These programs have not been audited. DeepSwap is a fork of raydium-cp-swap;
-> the fork itself is not audited either.
-
 ## What is in this repository
 
 This tree is the exact source the mainnet binaries were built from (release commit `03a5c75`

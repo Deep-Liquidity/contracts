@@ -15,8 +15,7 @@ solana_security_txt::security_txt! {
     contacts: "email:security@deepliquidity.fun,link:https://github.com/Deep-Liquidity/contracts/security/advisories/new",
     policy: "https://github.com/Deep-Liquidity/contracts/blob/main/SECURITY.md",
     source_code: "https://github.com/Deep-Liquidity/contracts",
-    preferred_languages: "en",
-    auditors: "None. Fork of raydium-cp-swap (see NOTICE); the fork itself is not audited."
+    preferred_languages: "en"
 }
 
 // DEEP: one program id on every cluster (keypair: target/deploy/deep_amm-keypair.json).

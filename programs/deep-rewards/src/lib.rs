@@ -1,8 +1,7 @@
 //! deep-rewards — DEEP Holder Rewards distributor (docs/V1_FEES.md section 4, PROGRAMS.md).
 //!
-//! NOT AUDITED: no independent audit has been done. The same source runs on devnet and is the
-//! mainnet release candidate (no build-time keys, no cluster feature). See docs/PROGRAMS.md,
-//! docs/SECURITY.md and docs/KNOWN_ISSUES.md.
+//! The same source runs on devnet and is the mainnet release candidate (no build-time keys, no
+//! cluster feature). See docs/PROGRAMS.md, docs/SECURITY.md and docs/KNOWN_ISSUES.md.
 //!
 //! One `Distributor` per (token mint, reward asset). The reward asset is the pool's paired
 //! asset: native SOL (reward mint = the WSOL mint; WSOL deposits are unwrapped by
@@ -53,8 +52,7 @@ solana_security_txt::security_txt! {
     contacts: "email:security@deepliquidity.fun,link:https://github.com/Deep-Liquidity/contracts/security/advisories/new",
     policy: "https://github.com/Deep-Liquidity/contracts/blob/main/SECURITY.md",
     source_code: "https://github.com/Deep-Liquidity/contracts",
-    preferred_languages: "en",
-    auditors: "None"
+    preferred_languages: "en"
 }
 
 declare_id!("4z2KpxUcdNFXFpzxKtcmTv6aDMqE4CMLCdbYExLYeDE2");
